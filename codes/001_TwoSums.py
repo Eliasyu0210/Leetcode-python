@@ -5,14 +5,17 @@
 #  and you may not use the same element twice.
 
 
-class Solution:
-    def twoSum(self, nums: 'List[int]', target: 'int') -> 'List[int]':
-        dic = list(enumerate(nums))
-        for i in range(len(dic)):
-            for j in range(len(dic)):
-                if dic[i][1] == target - dic[j][1]:
-                    if dic[i][0] != dic[j][0]:
-                        return [i, j]
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        for i in range(len(nums)-1):
+            for j in range(i+1, len(nums)):
+                if target == nums[i] + nums[j]:
+                    return [i, j]
 
 # ISSUES:
 # 1. 
