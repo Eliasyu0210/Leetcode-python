@@ -9,7 +9,13 @@
 # Implementation : sorted the array and find the last k-th element
 # Actually this problem should be solved using heap.
 
+import heapq
 class Solution:
-    def findKthLargest(self, nums, k: int) -> int:
-        nums.sort()
-        return nums[-k]
+    def findKthLargest(self, nums,  k: int) -> int:
+        heapq.heapify(nums)
+        while len(nums) != 0:
+
+            if len(nums) == k:
+                return heapq.heappop(nums)
+            else:
+                 a = heapq.heappop(nums)
