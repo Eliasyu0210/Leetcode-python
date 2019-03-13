@@ -11,7 +11,7 @@
 # already exist in the dict, if yes, return the index of the complement
 # and current index; if no, then add the item into the dictionray  
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums ,target):
         dic = {}
         for i in range(len(nums)):
             complement = target - nums[i]

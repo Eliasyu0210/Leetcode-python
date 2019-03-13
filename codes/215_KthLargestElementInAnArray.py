@@ -11,11 +11,11 @@
 
 import heapq
 class Solution:
-    def findKthLargest(self, nums,  k: int) -> int:
+    def findKthLargest(self, nums,  k) :
         heapq.heapify(nums)
         while len(nums) != 0:
 
             if len(nums) == k:
                 return heapq.heappop(nums)
             else:
-                 a = heapq.heappop(nums)
+                heapq.heappop(nums)
