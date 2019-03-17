@@ -11,7 +11,7 @@
 
 
 class Solution:
-    def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
+    def maxIncreaseKeepingSkyline(self, grid) :
         def maxCol(grid, j):
             ans = 0
             for i in range(len(grid)):
