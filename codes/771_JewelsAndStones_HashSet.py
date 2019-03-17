@@ -6,6 +6,7 @@
 
 # Using Hashset, the string of jewels will be seted to a Hashset. which means the time complexity of each search will be O(1)
 
+# in python using set for the usage of hashset, because the search in set() is also O(1)
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         Jset = set(J)
