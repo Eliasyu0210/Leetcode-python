@@ -10,7 +10,8 @@
 #         self.val = x
 #         self.next = None
 
-
+# Explanation : In order to avoid to modify the value, I have used a previous node, which the next node of the 
+# current node will be inserted between the previous node and current node.
 class Solution:
     def swapPairs(self, head: ListNode) -> ListNode:
         dummy = ListNode(0)
