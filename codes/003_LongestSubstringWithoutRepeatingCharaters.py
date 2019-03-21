@@ -1,6 +1,7 @@
 #  Given a string, find the length of the longest substring
 #  without repeating characters.
 
+# Brute force solution. 
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
